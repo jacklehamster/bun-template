@@ -12,7 +12,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/react": "^18.2.21",
+    "bun-types": "latest",
+    "react": "^18.2.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
