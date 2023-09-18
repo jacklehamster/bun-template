@@ -5,14 +5,14 @@
   "scripts": {
     "start": "bun run index.ts",
     "bundle": "bun run bundler/bundler.ts",
-    "example": "cd example && bun start && cd ..",
-    "file-sample": "bun run samples/file.tsx && cat samples/data/test.json",
-    "http-sample": "bun run samples/server.tsx"
+    "list": "bun run samples/list-scripts.tsx",
+    "example": "bun run bundle && cd example && bun start && cd ..",
+    "fileSample": "bun run samples/file.tsx && cat samples/data/test.json",
+    "httpSample": "bun run samples/server.tsx"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "bun-types": "^1.0.2"
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

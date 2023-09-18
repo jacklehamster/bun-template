@@ -1,7 +1,1 @@
-// src/hello-world.tsx
-function hello() {
-  console.log("Hello World!");
-}
-export {
-  hello
-};
+function l(){console.log("Hello World!")}export{l as hello};
