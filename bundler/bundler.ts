@@ -1,4 +1,4 @@
-async function bundle() {
+async function bundle(Bun: { build: Function }) {
     await Bun.build({
         entrypoints: ['./src/hello-world.tsx'],
         outdir: './build',
@@ -6,4 +6,4 @@ async function bundle() {
       });
 }
 
-bundle();
+bundle(Bun as unknown as { build: Function });
