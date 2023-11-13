@@ -6,7 +6,7 @@
     "start": "bun run index.ts",
     "bundle": "rm -rf build/*.* && bun run bundler/bundler.ts && bun test",
     "list": "bun run samples/list-scripts.tsx",
-    "example": "bun run bundle && cd example && bun start && cd ..",
+    "example": "cd example && bun start && cd ..",
     "fileSample": "bun run samples/file.tsx && cat samples/data/test.json",
     "httpSample": "bun run samples/server.tsx"
   },
@@ -21,10 +21,12 @@
     "bun-types": "latest",
     "jest": "^29.7.0",
     "png-to-ico": "^2.1.8",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "gl-matrix": "^3.4.3"
   }
 }

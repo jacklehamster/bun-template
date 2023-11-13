@@ -1,6 +1,7 @@
 # bun-template
 Bun template for creating projects using bunjs
 
+![](https://jacklehamster.github.io/bun-template/icon.png)
 ## Install bun
 
 https://bun.sh/
@@ -14,10 +15,14 @@ curl -fsSL https://bun.sh/install | bash
 - **start**: "bun run index.ts",
 - **bundle**: "bun run bundler/bundler.ts",
 - **list**: "bun run samples/list-scripts.tsx",
-- **example**: "bun run bundle && cd example && bun start && cd ..",
+- **example**: "cd example && bun start && cd ..",
 - **fileSample**: "bun run samples/file.tsx && cat samples/data/test.json",
 - **httpSample**: "bun run samples/server.tsx"
 
 ## Run example
 
-https://jacklehamster.github.io/bun-template/example/
+[https://jacklehamster.github.io/bun-template/example/](https://jacklehamster.github.io/bun-template/example/)
+
+## Github Source
+
+[https://github.com/jacklehamster/bun-template/](https://github.com/jacklehamster/bun-template/)
