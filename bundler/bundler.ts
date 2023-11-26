@@ -4,7 +4,10 @@ async function bundle() {
     outdir: './build',
     minify: true,
     sourcemap: "external",
+    target: "browser",
   });
 }
 
-bundle();
+await bundle();
+
+export { }

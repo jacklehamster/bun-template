@@ -19,11 +19,11 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "es5",
+    "target": "esnext",
     "allowJs": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "downlevelIteration": true,
     "baseUrl": ".",
     "paths": {

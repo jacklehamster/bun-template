@@ -15,9 +15,8 @@
     window.global = globalThis;
   </script>
   <script type="module">
-    import { testCanvas, hello } from './build/index.js';
+    import { hello } from './build/index.js';
 
-    window.engine = testCanvas(document.querySelector('#root'));
     hello();
   </script>
 </html>

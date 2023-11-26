@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "tsc": "tsc",
     "start": "bun run index.ts",
     "bundle": "rm -rf build/*.* && bun run bundler/bundler.ts && bun test",
     "list": "bun run samples/list-scripts.tsx",
@@ -24,9 +25,8 @@
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "dependencies": {
-    "gl-matrix": "^3.4.3"
   }
 }
