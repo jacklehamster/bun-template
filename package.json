@@ -2,7 +2,7 @@
   "name": "bun-template",
   "module": "src/index.ts",
   "description": "<INSERT DESCRIPTION>",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "keywords": [
     "webgl",
     "texture",
