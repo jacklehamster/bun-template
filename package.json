@@ -2,7 +2,7 @@
   "name": "bun-template",
   "module": "src/index.ts",
   "description": "<INSERT DESCRIPTION>",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "keywords": [
     "webgl",
     "texture",
@@ -58,6 +58,5 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
