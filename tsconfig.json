@@ -1,35 +1,29 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "types": ["bun-types"],
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["dom", "esnext"],
-    "strict": true,
-    "outDir": "dist",
+    "outDir": "./dist",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "paths": { 
+      "@/*": ["src/*"]
+    },
+    "lib": ["ESNext"],
     "module": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "declaration": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "esnext",
     "allowJs": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "noEmit": false,
-    "downlevelIteration": true,
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    }
+    "types": ["bun-types"]
   },
-  "include": ["src", "bundler"],
-  "exclude": ["node_modules", "build"]
+  "include": [
+    "src/**/*.ts",
+  ]
 }
