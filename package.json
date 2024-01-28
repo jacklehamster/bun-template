@@ -4,17 +4,18 @@
   "description": "<INSERT DESCRIPTION>",
   "version": "1.0.22",
   "keywords": [
-    "webgl",
-    "texture",
-    "spritesheet",
+    "bun",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jacklehamster/bun-template"
+    "url": "git@github.com:jacklehamster/bun-template.git"
   },
   "homepage": "<INSERT HOMEPAGE>",
-  "author": "Jack Le Hamster",
+  "author": {
+    "name": "Jack Le Hamster",
+    "email": "jacklehamster@gmail.com"
+  },
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -26,7 +27,7 @@
     "tsc": "tsc",
     "start": "bun run index.ts",
     "test": "bun test",
-    "build": "rm -rf dist/*.* && bun run bundler/bundler.ts && bun run test && bun run build:declaration",
+    "build": "bun scripts/update-package.ts && rm -rf dist/*.* && bun run bundler/bundler.ts && bun run test && bun run build:declaration",
     "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "build:example": "cd example && bun run build && cd ..",
     "list": "bun run samples/list-scripts.tsx",
@@ -46,7 +47,7 @@
     "@types/jest": "^29.5.6",
     "@types/mocha": "^10.0.3",
     "@types/react": "^18.2.21",
-    "bun": "^1.0.7",
+    "bun": "^1.0.25",
     "bun-types": "latest",
     "jest": "^29.7.0",
     "np": "^9.2.0",

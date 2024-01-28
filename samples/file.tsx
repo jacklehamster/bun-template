@@ -4,7 +4,7 @@
 async function testFile() {
     const file = Bun.file('samples/data/test.json'); // BunFile
 
-    const pkg = await file.json(); // BunFile extends Blob
+    const pkg = JSON.parse(await file.text());
     pkg.name = 'my-package';
     pkg.version = '1.0.0';
     pkg.date = new Date().toString();
