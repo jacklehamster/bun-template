@@ -5,7 +5,13 @@
   "version": "1.0.26",
   "keywords": [
     "bun",
-    "typescript"
+    "bunjs",
+    "typescript",
+    "template",
+    "npm",
+    "np",
+    "publish",
+    "git"
   ],
   "repository": {
     "type": "git",
