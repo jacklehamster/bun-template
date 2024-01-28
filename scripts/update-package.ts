@@ -70,24 +70,6 @@ async function getRepoDetails(owner: string, repo: string) {
   }
 }
 
-async function getRepoDescription(owner: string, repo: string): Promise<string | null> {
-  console.log(owner, repo);
-  try {
-    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
-    const data: any = await response.json();
-
-    if (response.ok) {
-      return data.description || null;
-    } else {
-      console.error(`Failed to fetch repository details: ${data.message}`);
-      return null;
-    }
-  } catch (error) {
-    console.error('Error fetching repository details:', error.message);
-    return null;
-  }
-}
-
 async function updatePackage() {
   const file = Bun.file('package.json');
 
@@ -111,7 +93,6 @@ async function updatePackage() {
   pkg.homepage = repoDetails?.homepage ?? "<fill in homepage>";
 
   await Bun.write(file, JSON.stringify(pkg, null, "  ") + "\n");
-  console.log(pkg);
 }
 
 updatePackage();

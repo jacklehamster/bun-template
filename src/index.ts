@@ -1,3 +1,5 @@
-export function hello() {
-  return "Hello World!";
+export class Hello {
+  static hello() {
+    return "Hello World!";
+  }
 }

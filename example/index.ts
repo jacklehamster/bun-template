@@ -1,9 +1,9 @@
-import { hello } from "bun-template";
+import { Hello } from "bun-template";
 import Bao from "baojs";
 import serveStatic from "serve-static-bun";
 
 const app = new Bao();
-hello();
+console.log(Hello.hello());
 
 app.get("/*any", serveStatic("/", { middlewareMode: "bao" }));
 
