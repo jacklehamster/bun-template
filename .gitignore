@@ -173,3 +173,6 @@ dist
 
 dist/
 *.tsbuildinfo
+
+# Not needed since we use bun
+package-lock.json
