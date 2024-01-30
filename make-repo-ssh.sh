@@ -9,7 +9,7 @@ if [[ $CURRENT_URL == https://* ]]; then
   REPO_NAME=$(basename "$CURRENT_URL" ".git")
 
   # Update the Git remote URL to use SSH
-  NEW_URL="git@github.com:$(basename $(dirname "$CURRENT_URL"))/${REPO_NAME}.git"
+  NEW_URL="git+ssh://git@github.com:$(basename $(dirname "$CURRENT_URL"))/${REPO_NAME}.git"
   git remote set-url origin "$NEW_URL"
 
   # Verify the changes
