@@ -1,4 +1,6 @@
 # bun-template
+[![npm version](https://badge.fury.io/js/bun-template.svg)](https://www.npmjs.com/package/bun-template)
+
 Bun template for creating projects using bunjs
 
 ![](https://jacklehamster.github.io/bun-template/icon.png)
