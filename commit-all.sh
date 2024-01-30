@@ -14,6 +14,8 @@ for file in $files; do
   commit_message+="\n$file"
 done
 
+commit_message+="\n\nhttps://github.com/jacklehamster/bun-template"
+
 git commit -m "$commit_message"
 
 # Print a message indicating the successful commit
