@@ -11,10 +11,10 @@ commit_message="Auto-commit: $(date +"%Y-%m-%d %H:%M:%S")
 
 Files:"
 for file in $files; do
-  commit_message+="\n$file"
+  commit_message+='\n'"$file"
 done
 
-commit_message+="\n\nhttps://github.com/jacklehamster/bun-template"
+commit_message+='\n\nhttps://github.com/jacklehamster/bun-template'
 
 git commit -m "$commit_message"
 
