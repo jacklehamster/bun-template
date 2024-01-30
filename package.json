@@ -51,7 +51,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@dobuki/autocommit": "^1.0.6",
+    "@dobuki/autocommit": "^1.0.7",
     "@types/bun": "^1.0.4",
     "@types/jest": "^29.5.6",
     "@types/mocha": "^10.0.3",
