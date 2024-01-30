@@ -41,7 +41,7 @@
     "fileSample": "bun run samples/file.tsx && cat samples/data/test.json",
     "httpSample": "bun run samples/server.tsx",
     "make-repo-ssh": "./make-repo-ssh.sh",
-    "commit-all": "npm explore @dobuki/autocommit -- npm run autocommit \"$(pwd)\"",
+    "commit-all": "npm explore @dobuki/autocommit -- bun run autocommit \"$(pwd)\"",
     "np": "bun run build && bun run build:example && bun run make-repo-ssh && bun run commit-all && npm publish --access=public && np"
   },
   "files": [
