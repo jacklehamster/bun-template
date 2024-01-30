@@ -6,17 +6,22 @@ git add .
 # Get the list of files about to be committed
 files=$(git status --porcelain | awk '{print $2}')
 
-# Commit with a multi-line message including file information
-commit_message="Auto-commit: $(date +"%Y-%m-%d %H:%M:%S")
+# Create a temporary file for the commit message
+temp_file=$(mktemp)
+trap 'rm -f "$temp_file"' EXIT
 
-Files:"
-for file in $files; do
-  commit_message+='\n'"$file"
-done
+# Write the commit message to the temporary file
+{
+  echo "Auto-commit: $(date +"%Y-%m-%d %H:%M:%S")"
+  echo -e "\nFiles:"
+  for file in $files; do
+    echo "$file"
+  done
+  echo -e "\n\nhttps://github.com/jacklehamster/bun-template"
+} > "$temp_file"
 
-commit_message+='\n\nhttps://github.com/jacklehamster/bun-template'
-
-git commit -m "$commit_message"
+# Commit with the message from the temporary file
+git commit -F "$temp_file"
 
 # Print a message indicating the successful commit
 echo "Changes committed successfully."
