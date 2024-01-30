@@ -42,7 +42,10 @@
     "httpSample": "bun run samples/server.tsx",
     "make-repo-ssh": "./make-repo-ssh.sh",
     "autocommit": "npm explore @dobuki/autocommit -- bun run autocommit \"$(pwd)\"",
-    "np": "bun run build && bun run build:example && bun run make-repo-ssh && bun run autocommit && npm publish --access=public && np"
+    "np": "bun run build && bun run build:example && bun run make-repo-ssh && bun run autocommit && np"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist"
