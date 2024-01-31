@@ -2,9 +2,9 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "src",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": { 
-      "*": ["src/*"]
+      "@/*": ["src/*"]
     },
     "lib": ["ESNext"],
     "module": "esnext",
