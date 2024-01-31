@@ -2,9 +2,9 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "src",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": { 
-      "@/*": ["src/*"]
+      "*": ["src/*"]
     },
     "lib": ["ESNext"],
     "module": "esnext",
@@ -23,10 +23,6 @@
     "allowJs": true,
     "types": ["bun-types"]
   },
-  "include": [
-    "src/**/*.ts",
-  ],
-  "exclude": [
-    "src/**/*.test.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"],
 }

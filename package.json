@@ -30,7 +30,6 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "tsc": "tsc",
     "start": "bun run index.ts",
     "test": "bun test",
     "build": "bun i && bun run fix-package-name && rm -rf *.tsbuildinfo && rm -rf dist/*.* && bun run bundler/bundler.ts && bun run test && bun run build:declaration",
