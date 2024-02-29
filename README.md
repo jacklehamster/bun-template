@@ -1,4 +1,5 @@
 # bun-template
+
 [![npm version](https://badge.fury.io/js/bun-template.svg)](https://www.npmjs.com/package/bun-template)
 
 Bun template for creating projects using bunjs
@@ -16,10 +17,6 @@ curl -fsSL https://bun.sh/install | bash
 
 - **start**: "bun run index.ts",
 - **bundle**: "bun run bundler/bundler.ts",
-- **list**: "bun run samples/list-scripts.tsx",
-- **example**: "cd example && bun start && cd ..",
-- **fileSample**: "bun run samples/file.tsx && cat samples/data/test.json",
-- **httpSample**: "bun run samples/server.tsx"
 
 ## Run example
 
