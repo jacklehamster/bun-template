@@ -1,5 +1,5 @@
 async function bundle() {
-  await Bun.build({
+  return await Bun.build({
     entrypoints: ['./src/index.ts'],
     outdir: './dist',
     minify: true,
@@ -8,6 +8,7 @@ async function bundle() {
   });
 }
 
-await bundle();
+const result = await bundle();
+result?.logs.forEach((log, index) => console.log(index, log));
 
 export { }
