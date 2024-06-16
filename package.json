@@ -49,5 +49,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@dobuki/auto-publish": "^1.0.18"
   }
 }
