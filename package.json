@@ -1,6 +1,6 @@
 {
   "name": "bun-template",
-  "module": "src/index.ts",
+  "module": "src/index.tsx",
   "description": "Bun template for creating projects using bunjs",
   "version": "1.0.59",
   "keywords": [
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "bun test",
-    "build": "bun i && bun run fix-package-name && rm -rf *.tsbuildinfo && rm -rf dist/*.* && bun run bundler/bundler.ts && bun run test && bun run build:declaration",
+    "build": "bun i && rm -rf *.tsbuildinfo && rm -rf dist/*.* && bun run bundler/bundler.ts && bun run test && bun run build:declaration",
     "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "build:example": "cd example && bun i && bun run build && cd ..",
     "example": "cd example && bun start && cd ..",
@@ -45,7 +45,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@dobuki/dev-dependencies": "^1.0.12"
+    "@dobuki/dev-dependencies": "^1.0.13"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

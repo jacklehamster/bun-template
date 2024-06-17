@@ -4,10 +4,11 @@
 
 Bun template for creating projects using bunjs
 
-![](https://jacklehamster.github.io/bun-template/icon.png)
+![icon](https://jacklehamster.github.io/bun-template/icon.png)
+
 ## Install bun
 
-https://bun.sh/
+<https://bun.sh/>
 
 ```bash
 curl -fsSL https://bun.sh/install | bash

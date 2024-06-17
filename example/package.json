@@ -1,10 +1,10 @@
 {
   "name": "example",
-  "module": "src/index.ts",
+  "module": "src/index.tsx",
   "type": "module",
   "scripts": {
     "start": "bun run build && bun run index.ts --watch",
-    "build": "bun i && bun run build-icon && bun build --target=node ./src/index.ts --outfile=dist/index.js",
+    "build": "bun i && bun run build-icon && bun build --target=node ./src/index.tsx --outfile=dist/index.js",
     "build-icon": "png-to-ico ../icon.png > favicon.ico"
   },
   "devDependencies": {
