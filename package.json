@@ -45,7 +45,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@dobuki/dev-dependencies": "^1.0.15"
+    "@dobuki/dev-dependencies": "^1.0.16"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
