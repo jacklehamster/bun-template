@@ -5,7 +5,7 @@
   "scripts": {
     "start": "bun run build && bun run index.ts --watch",
     "build": "bun i && bun run build-icon && bun build --target=node ./src/index.tsx --outfile=dist/index.js",
-    "build-icon": "icon-gen -i ../icon.png --ico -o ."
+    "build-icon": "icon-gen -i ../icon.png -o ."
   },
   "devDependencies": {
     "baojs": "^0.2.1",
