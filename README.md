@@ -4,25 +4,18 @@
 
 Bun template for creating projects using bunjs
 
-![icon](https://jacklehamster.github.io/bun-template/icon.png)
+![icon](icon.png)
 
-## Install bun
+## Build
 
-<https://bun.sh/>
-
-```bash
-curl -fsSL https://bun.sh/install | bash
-```
-
-## Commands
-
-- **start**: "bun run index.ts",
-- **bundle**: "bun run bundler/bundler.ts",
+`./build.sh`
 
 ## Run example
 
-[https://jacklehamster.github.io/bun-template/example/](https://jacklehamster.github.io/bun-template/example/)
+`./sample.sh`
+
+[example](example)
 
 ## Github Source
 
-[https://github.com/jacklehamster/bun-template/](https://github.com/jacklehamster/bun-template/)
+<https://github.com/jacklehamster/bun-template/>
