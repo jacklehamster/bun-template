@@ -19,3 +19,7 @@ Bun template for creating projects using bunjs
 ## Github Source
 
 <https://github.com/jacklehamster/bun-template/>
+
+## Create a new repo
+
+[Create repo with this template](https://github.com/new?owner=jacklehamster&visibility=public&template_owner=jacklehamster&template_name=bun-template)
