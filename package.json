@@ -2,7 +2,7 @@
   "name": "bun-template",
   "module": "src/index.ts",
   "description": "Bun template for creating projects using bunjs",
-  "version": "1.0.65",
+  "version": "1.0.66",
   "keywords": [
     "bun",
     "bunjs",
