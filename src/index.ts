@@ -3,7 +3,3 @@ export class Hello {
     return "Hello World!";
   }
 }
-
-export function HelloComponent() {
-  return <>Hello</>
-}
